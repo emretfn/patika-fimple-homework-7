@@ -1,10 +1,18 @@
 import React from 'react'
 
-import { ExampleComponent } from 'emretufan-publishing-homework'
+import { Button } from 'emretufan-publishing-homework'
 import 'emretufan-publishing-homework/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div className='container'>
+      <Button type='default' text='Click Me!' />
+      <Button type='primary' text='Click Me!' />
+      <Button type='dashed' text='Click Me!' />
+      <Button type='text' text='Click Me!' />
+      <Button type='link' text='Click Me!' />
+    </div>
+  )
 }
 
 export default App
